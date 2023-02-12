@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <strong>See the list</strong>
+    </div>
+
+    {{#total}}
+
+
+    <div style="border: 1px solid gray; display: inline-block; vertical-align: top; padding: 5px; width: 300px">
+        <div style="font-size: 14px;width: 290px; padding: 5px; margin-bottom: 5px;  background-color: steelblue;text-align: center;" ><strong>DIVISION {{id}}</strong></div>
+
+
+        {{#humans}}
+        <div style="width: 300px; text-align: center; border: 1px solid gray; margin-bottom: 5px;">
+            <div style="text-align: center; border: 1px solid gray;  margin-bottom: 5px;">
+                {{name}} {{surname}}
+                <div style="font-size: 14px;  background-color: lightsteelblue;"><i>{{who}}</i></div>
+                {{size}} {{rang}} {{specialization}}
+            </div>
+        </div>
+        {{/humans}}
+    </div>
+    {{/total}}
+
+</body>
+</html>
